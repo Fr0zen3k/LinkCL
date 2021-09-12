@@ -1,0 +1,15 @@
+set(LinkCL_CL_SOURCE_FILES
+    "${CMAKE_CURRENT_SOURCE_DIR}/cl.c"
+    CACHE INTERNAL "" FORCE
+)
+
+set(LinkCL_CL_HEADER_FILES
+    "${CMAKE_CURRENT_SOURCE_DIR}/cl.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/cl_ext.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/cl_gl.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/cl_gl_ext.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/cl_platform.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/cl_version.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencl.h"
+    CACHE INTERNAL "" FORCE
+)

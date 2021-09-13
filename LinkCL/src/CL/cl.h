@@ -1463,7 +1463,7 @@ typedef CL_API_ENTRY cl_int(CL_API_CALL *f_clCreateSubDevices)(
 typedef CL_API_ENTRY cl_int(CL_API_CALL* f_clRetainDevice)(
     cl_device_id                                device) CL_API_SUFFIX__VERSION_1_2;
 
-typedef CL_API_ENTRY cl_int(CL_API_CALL* f_clReleaseDevices)(
+typedef CL_API_ENTRY cl_int(CL_API_CALL* f_clReleaseDevice)(
     cl_device_id                                device) CL_API_SUFFIX__VERSION_1_2;
 
 typedef CL_API_ENTRY cl_mem(CL_API_CALL* f_clCreateImage)(
@@ -1877,7 +1877,7 @@ extern f_clGetExtensionFunctionAddress clGetExtensionFunctionAddress;
 
 extern f_clCreateSubDevices clCreateSubDevices;
 extern f_clRetainDevice clRetainDevice;
-extern f_clReleaseDevices clReleaseDevices;
+extern f_clReleaseDevice clReleaseDevice;
 extern f_clCreateImage clCreateImage;
 extern f_clCreateProgramWithBuiltInKernels clCreateProgramWithBuiltInKernels;
 extern f_clCompileProgram clCompileProgram;

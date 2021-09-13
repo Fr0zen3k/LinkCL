@@ -223,7 +223,7 @@ void LoadOpenCLFunctions(void* libopencl, int wrapper) {
 #ifdef CL_VERSION_1_2
 	LoadFunction(clCreateSubDevices);
 	LoadFunction(clRetainDevice);
-	LoadFunction(clReleaseDevices);
+	LoadFunction(clReleaseDevice);
 	LoadFunction(clCreateImage);
 	LoadFunction(clCreateProgramWithBuiltInKernels);
 	LoadFunction(clCompileProgram);
@@ -392,7 +392,7 @@ f_clGetExtensionFunctionAddress clGetExtensionFunctionAddress;
 
 f_clCreateSubDevices clCreateSubDevices;
 f_clRetainDevice clRetainDevice;
-f_clReleaseDevices clReleaseDevices;
+f_clReleaseDevice clReleaseDevice;
 f_clCreateImage clCreateImage;
 f_clCreateProgramWithBuiltInKernels clCreateProgramWithBuiltInKernels;
 f_clCompileProgram clCompileProgram;

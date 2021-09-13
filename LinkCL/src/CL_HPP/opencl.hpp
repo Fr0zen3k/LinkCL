@@ -435,8 +435,8 @@
 
 /* Detect which version to target */
 #if !defined(CL_HPP_TARGET_OPENCL_VERSION)
-# pragma message("opencl.hpp: CL_HPP_TARGET_OPENCL_VERSION is not defined. It will default to 220 (OpenCL 2.2)")
-# define CL_HPP_TARGET_OPENCL_VERSION 220
+# pragma message("opencl.hpp: CL_HPP_TARGET_OPENCL_VERSION is not defined. It will default to 300 (OpenCL 3.0)")
+# define CL_HPP_TARGET_OPENCL_VERSION 300
 #endif
 #if CL_HPP_TARGET_OPENCL_VERSION != 100 && \
     CL_HPP_TARGET_OPENCL_VERSION != 110 && \
@@ -445,9 +445,9 @@
     CL_HPP_TARGET_OPENCL_VERSION != 210 && \
     CL_HPP_TARGET_OPENCL_VERSION != 220 && \
     CL_HPP_TARGET_OPENCL_VERSION != 300
-# pragma message("opencl.hpp: CL_HPP_TARGET_OPENCL_VERSION is not a valid value (100, 110, 120, 200, 210, 220 or 300). It will be set to 220")
+# pragma message("opencl.hpp: CL_HPP_TARGET_OPENCL_VERSION is not a valid value (100, 110, 120, 200, 210, 220 or 300). It will be set to 300")
 # undef CL_HPP_TARGET_OPENCL_VERSION
-# define CL_HPP_TARGET_OPENCL_VERSION 220
+# define CL_HPP_TARGET_OPENCL_VERSION 300
 #endif
 
 /* Forward target OpenCL version to C headers if necessary */
@@ -526,7 +526,7 @@
 #endif
 
 #if defined(__APPLE__) || defined(__MACOSX)
-#include <OpenCL/opencl.h>
+#include <CL/opencl.h>
 #else
 #include <CL/opencl.h>
 #endif // !__APPLE__

@@ -55,9 +55,17 @@
 #endif
 
 
+#define LINKCL_NORMAL 0;
+#define LINKCL_WRAPPER 1;
+
+
+#define LINKCL_LINK_SUCCESS 1;
+#define LINKCL_LINK_FAILURE 0;
+
+
 #define LINKCL_PUBLIC_API __attribute__((visibility("default")))
 
-#define LINKCL_PRIVATE_API __attribute__((visibility("private")))
+#define LINKCL_PRIVATE_API __attribute__((visibility("hidden")))
 
 #define LINKCL_NOEXCEPT noexcept
 

@@ -23,6 +23,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+#include "Core/Core.h"
 
 /******************************************************************************/
 
@@ -936,6 +937,12 @@ typedef struct _cl_name_version {
 #endif
 
 /********************************************************************************************************/
+
+// ------------------------------------------- Loading Function ------------------------------------------
+
+int LoadOpenCL();
+
+// -------------------------------------------------------------------------------------------------------
 
 /*
     Function Typedefs
@@ -1880,8 +1887,6 @@ extern f_clGetKernelArgInfo clGetKernelArgInfo;
 extern f_clEnqueueFillBuffer clEnqueueFillBuffer;
 extern f_clEnqueueFillImage clEnqueueFillImage;
 extern f_clEnqueueMigrateMemObjects clEnqueueMigrateMemObjects;
-extern f_clEnqueueMarkerWithWaitList clEnqueueMarkerWithWaitList;
-extern f_clEnqueueBarrierWithWaitList clEnqueueBarrierWithWaitList;
 extern f_clEnqueueMarkerWithWaitList clEnqueueMarkerWithWaitList;
 extern f_clEnqueueBarrierWithWaitList clEnqueueBarrierWithWaitList;
 
